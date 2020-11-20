@@ -1,2 +1,2 @@
 language: csharp
-solution: ~/System/AyuboDriveSystem.sln
+solution: ./System/AyuboDriveSystem.sln
