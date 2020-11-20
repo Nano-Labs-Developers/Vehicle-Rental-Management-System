@@ -1,0 +1,11 @@
+# Dark Mode
+
+ButtonForce_Color  : White
+
+SideMenuSideColor_pnl : White
+
+MainMenuHeader_pnl : 38, 38, 38
+
+SidePanelHadler_pnl : 47, 49, 54
+
+UserControllersBackGround : 54, 57, 63

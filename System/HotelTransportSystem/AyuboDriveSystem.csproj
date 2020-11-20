@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8E8C49C-BCE5-4152-8816-030C016705E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HotelTransportSystem</RootNamespace>
+    <AssemblyName>HotelTransportSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\ASUS\Desktop\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booked\BookedData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booked\BookedData.Designer.cs">
+      <DependentUpon>BookedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booked\BookedDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booked\BookedDataList.Designer.cs">
+      <DependentUpon>BookedDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerDataList.Designer.cs">
+      <DependentUpon>CustomerDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\DataView.Designer.cs">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\DriversData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drivers\DriversData.Designer.cs">
+      <DependentUpon>DriversData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\DriversDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drivers\DriversDataList.Designer.cs">
+      <DependentUpon>DriversDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire and Rent\Boocking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hire and Rent\Boocking.Designer.cs">
+      <DependentUpon>Boocking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire and Rent\Hire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hire and Rent\Hire.Designer.cs">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire and Rent\Pay\PayHire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hire and Rent\Pay\PayHire.Designer.cs">
+      <DependentUpon>PayHire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire and Rent\Pay\PayRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hire and Rent\Pay\PayRent.Designer.cs">
+      <DependentUpon>PayRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire and Rent\Rent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hire and Rent\Rent.Designer.cs">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Forgot_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Forgot_Password.Designer.cs">
+      <DependentUpon>Forgot_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuSettings\Account\Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainMenuSettings\Account\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuSettings\Settings\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainMenuSettings\Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuSettings\Settings\SettingsData.cs" />
+    <Compile Include="Packages\PackageData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Packages\PackageData.Designer.cs">
+      <DependentUpon>PackageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Packages\PackageDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Packages\PackageDataList.Designer.cs">
+      <DependentUpon>PackageDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return\Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return\Return.Designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return\ReturnPayUserController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return\ReturnPayUserController.Designer.cs">
+      <DependentUpon>ReturnPayUserController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp\StartUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp\StartUp.Designer.cs">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\VehicleData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicles\VehicleData.Designer.cs">
+      <DependentUpon>VehicleData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\VehicleDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicles\VehicleDataList.Designer.cs">
+      <DependentUpon>VehicleDataList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booked\BookedData.resx">
+      <DependentUpon>BookedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booked\BookedDataList.resx">
+      <DependentUpon>BookedDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\CustomerDataList.resx">
+      <DependentUpon>CustomerDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\DriversData.resx">
+      <DependentUpon>DriversData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\DriversDataList.resx">
+      <DependentUpon>DriversDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire and Rent\Boocking.resx">
+      <DependentUpon>Boocking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire and Rent\Hire.resx">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire and Rent\Pay\PayHire.resx">
+      <DependentUpon>PayHire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire and Rent\Pay\PayRent.resx">
+      <DependentUpon>PayRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire and Rent\Rent.resx">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Forgot_Password.resx">
+      <DependentUpon>Forgot_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuSettings\Account\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuSettings\Settings\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Packages\PackageData.resx">
+      <DependentUpon>PackageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Packages\PackageDataList.resx">
+      <DependentUpon>PackageDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Return\Return.resx">
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return\ReturnPayUserController.resx">
+      <DependentUpon>ReturnPayUserController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp\StartUp.resx">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\VehicleData.resx">
+      <DependentUpon>VehicleData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\VehicleDataList.resx">
+      <DependentUpon>VehicleDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_moon_50px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_moon_50px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_moon_50px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_127px_2.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlackBoxLog.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
