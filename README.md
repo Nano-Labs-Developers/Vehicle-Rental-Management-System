@@ -1,2 +1,2 @@
-# car-rental-management-system
-Car rental management system C#
+# vehicle-rental-management-system
+vehicle rental management system C#
