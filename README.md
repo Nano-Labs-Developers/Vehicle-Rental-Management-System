@@ -13,7 +13,7 @@ $ cd Vehicle-Rental-Management-System
 - Visual Studio 2019
 - .NET Framework 4.8
 - MySQL
-- 
+
 ### Architecture
 ```
 |__ ITP Project
