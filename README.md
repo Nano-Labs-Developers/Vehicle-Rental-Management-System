@@ -16,7 +16,7 @@ $ cd Vehicle-Rental-Management-System
 
 ### Architecture
 ```
-|__ ITP Project
+|__ Vehicle Rental Management System
   |
   |__ System
   |         |_____ AdminPanel
